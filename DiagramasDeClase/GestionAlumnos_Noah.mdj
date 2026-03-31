@@ -380,7 +380,7 @@
 											"top": 248,
 											"width": 614.10107421875,
 											"height": 13,
-											"text": "+Alumno(nombre: String, apellido1: String, apellido2: String, fechaNacim: String, curso: int, clase: int): void",
+											"text": "+Alumno(nombre: String, apellido1: String, apellido2: String, fechaNacim: String, curso: int, clase: int)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1104,6 +1104,24 @@
 									"subViews": [
 										{
 											"_type": "UMLOperationView",
+											"_id": "AAAAAAGdQTVo+RzYWHg=",
+											"_parent": {
+												"$ref": "AAAAAAGdQD8aT/Z8NXc="
+											},
+											"model": {
+												"$ref": "AAAAAAGdQTVo7hzVk5k="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 797,
+											"top": 492,
+											"width": 239,
+											"height": 13,
+											"text": "+Gestor()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
 											"_id": "AAAAAAGdQIj3ePfN2M8=",
 											"_parent": {
 												"$ref": "AAAAAAGdQD8aT/Z8NXc="
@@ -1114,7 +1132,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 797,
-											"top": 492,
+											"top": 507,
 											"width": 239,
 											"height": 13,
 											"text": "+agregarAlumno(alum: Alumno): void",
@@ -1132,7 +1150,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 797,
-											"top": 507,
+											"top": 522,
 											"width": 239,
 											"height": 13,
 											"text": "+getAlumnos(): Alumno[]",
@@ -1150,7 +1168,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 797,
-											"top": 522,
+											"top": 537,
 											"width": 239,
 											"height": 13,
 											"text": "+mostrarAlumnos(): void",
@@ -1168,7 +1186,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 797,
-											"top": 537,
+											"top": 552,
 											"width": 239,
 											"height": 13,
 											"text": "+mostrarAlumno(indice: int): void",
@@ -1199,7 +1217,7 @@
 									"left": 792,
 									"top": 487,
 									"width": 249,
-									"height": 68
+									"height": 83
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1813,10 +1831,10 @@
 							"font": "Gloria Hallelujah;15;0",
 							"parentStyle": false,
 							"left": 496,
-							"top": 8,
+							"top": 35,
 							"width": 448,
 							"height": 166,
-							"text": "COMENTARIO sobre clase Alumno:\nComo el constructor recibe los datos por parámetro y hay un método toString (y esEsteAlumno(nombre:String) que compara el nombre con el dado por parámetro, que es como un equals pero solo con un dato), he visto innecesario el uso de getters y setters de acuerdo a los métodos que se piden.\nSegún el enunciado deben ser accesibles (getters y setters) pero no se usarían en este programa... sería código muerto."
+							"text": "COMENTARIO sobre clase Alumno:\nComo el constructor recibe los datos por parámetro y hay un método toString (y esEsteAlumno(nombre:String) que compara el nombre con el dado por parámetro, que es como un equals pero solo con un dato), he visto innecesario el uso de getters y setters de acuerdo a los métodos que se piden.\nSegún el enunciado deben ser accesibles por otras clases (getters y setters) pero no se usarían en este programa... sería código muerto."
 						},
 						{
 							"_type": "UMLAssociationView",
@@ -2511,15 +2529,6 @@
 									},
 									"name": "Alumno",
 									"parameters": [
-										{
-											"_type": "UMLParameter",
-											"_id": "AAAAAAGdQH3nB/ct52E=",
-											"_parent": {
-												"$ref": "AAAAAAGdQHkDpvb7gls="
-											},
-											"type": "void",
-											"direction": "return"
-										},
 										{
 											"_type": "UMLParameter",
 											"_id": "AAAAAAGdQPRDJPhP5MQ=",
@@ -3256,6 +3265,14 @@
 								}
 							],
 							"operations": [
+								{
+									"_type": "UMLOperation",
+									"_id": "AAAAAAGdQTVo7hzVk5k=",
+									"_parent": {
+										"$ref": "AAAAAAGdQD8aT/ZzbX0="
+									},
+									"name": "Gestor"
+								},
 								{
 									"_type": "UMLOperation",
 									"_id": "AAAAAAGdQIj3XPfK8WA=",
